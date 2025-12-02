@@ -1,0 +1,168 @@
+/* ---------------------------------
+   GLOBAL DARK THEME
+----------------------------------*/
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #0a0a0a;
+    margin: 0;
+
+    /* FULL-CENTER FIX */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-height: 100vh;
+    padding: 40px 10px;
+
+    color: #eaeaea;
+}
+
+
+/* ---------------------------------
+   CARD (neon border + glow)
+----------------------------------*/
+.card {
+    width: 100%;
+    max-width: 750px;   /* 🔥 Not too wide — perfect size */
+    margin: 0 auto;     /* CENTERED */
+
+    border-radius: 18px;
+    padding: 25px;
+
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    border: 2px solid rgba(138, 43, 226, 0.4);
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.25);
+}
+
+/* Make headings clearly visible */
+.card-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Subtitle text */
+.text-muted {
+    color: #bbbbbb !important;
+}
+
+/* ---------------------------------
+   FORM INPUTS
+----------------------------------*/
+input, textarea, select {
+    background: #1f1f1f !important;
+    border: 1px solid #444 !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    color: #f1f1f1 !important;
+    font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888 !important;
+}
+
+/* labels */
+.form-label {
+    font-weight: 600;
+    color: #dcdcdc !important;
+}
+
+/* ---------------------------------
+   BUTTONS
+----------------------------------*/
+.btn-primary {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    border: none;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-primary {
+    border: 2px solid #8e2de2;
+    color: #d7b0ff;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.btn-outline-primary:hover {
+    background: #8e2de2;
+    color: white;
+}
+
+/* ---------------------------------
+   MAP
+----------------------------------*/
+#map {
+    border-radius: 12px;
+    border: 2px solid #333;
+    margin-top: 10px;
+    display: none;
+}
+
+/* ---------------------------------
+   ALERTS
+----------------------------------*/
+.alert-success {
+    background: #163d21;
+    border-left: 6px solid #3aff87;
+    color: #cfffdb;
+}
+
+.alert-danger {
+    background: #451919;
+    border-left: 6px solid #ff5c5c;
+    color: #ffc6c6;
+}
+
+/* ---------------------------------
+   ADMIN TABLE
+----------------------------------*/
+.table {
+    background: #111;
+    color: #eaeaea;
+    border-radius: 10px;
+}
+
+.table thead {
+    background: #4a00e0;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #1a1a1a;
+}
+
+.table tbody tr:hover {
+    background: #2a2a2a !important;
+}
+
+/* ---------------------------------
+   LINKS
+----------------------------------*/
+a {
+    color: #c08bff;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #e4c4ff;
+}
+
+/* ---------------------------------
+   FILE INPUT FIX
+----------------------------------*/
+.form-control[type="file"] {
+    padding: 8px;
+    background: #1f1f1f;
+    border: 1px solid #555;
+    color: #ccc;
+}
